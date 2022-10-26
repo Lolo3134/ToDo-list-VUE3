@@ -1,15 +1,17 @@
 {
-  "name": "draganddrop",
+  "name": "todolist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "build": "webpack",
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "watch": "webpack -w"
   },
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
-    "core-js": "^3.8.3"
+    "core-js": "^3.8.3",
+    "mongoose": "^6.7.0",
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -17,13 +19,17 @@
     "@babel/preset-env": "^7.19.4",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "express": "^4.18.2",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
     "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
     "vue": "^3.2.41",
