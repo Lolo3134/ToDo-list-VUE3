@@ -6,17 +6,6 @@
   align-items: center;
 }
 
-.header__logo {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-
-    h1 {
-      @include logo;
-    }
-}
-
 .header__menu--wrappper {
   display: flex;
   flex-direction: column;
@@ -38,9 +27,6 @@
 
       li {
         list-style-type: none;
-        display: flex;
-        gap: 10px;
-        align-items: center;
         margin-bottom: 25px;
 
         a {
@@ -48,13 +34,13 @@
           color: #282846;
           margin-left: 0;
           padding-left: 0;
+          display: flex;
+          gap: 10px;
+          align-items: center;
         }
 
       }
-      li:hover, a:hover {
-        color: #29A19C;
-        fill: #29A19C;
-      }
+
       li:last-of-type {
         margin-bottom: 0;
       }

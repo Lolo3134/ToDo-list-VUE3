@@ -19,15 +19,6 @@
   letter-spacing: 0.01em;
 }
 
-@mixin logo {
-  font-weight: $fontWeightBold;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.03em;
-  color: #29A19C;
-  width: 55px;
-}
-
 @mixin fontSize12 {
   font-weight: $fontWeightRegular;
   font-size: 12px;
@@ -35,9 +26,37 @@
 }
 
 @mixin fontSize12Line16 {
-  font-weight: 400;
+  font-weight: $fontWeightRegular;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.01em;
 }
 
+@mixin fontSize12Bold {
+  font-weight: $fontWeightBold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+@mixin fontSize14 {
+  font-weight: $fontWeightRegular;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+@mixin fontSize14Bold {
+  font-weight: $fontWeightBold;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+@mixin link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+  color: #282846;
+}

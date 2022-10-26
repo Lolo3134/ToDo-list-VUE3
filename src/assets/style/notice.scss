@@ -1,0 +1,17 @@
+.notice {
+  p {
+    @include fontSize14;
+    margin-bottom: 10px;
+
+    a {
+      color: #29A19C;
+    }
+
+    span {
+      @include fontSize14Bold;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

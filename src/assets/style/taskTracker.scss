@@ -1,0 +1,45 @@
+.tasks__active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task {
+  border: 1px solid rgba(40, 40, 70, 0.1);
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.task__content {
+  display: flex;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox_indicator {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00AF91;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input[type=checkbox]:checked + .checkbox_indicator {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #00AF91;
+  border-radius: 4px;
+  background: url("../icon/check.png") center no-repeat;
+}

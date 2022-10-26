@@ -1,0 +1,22 @@
+.date {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.date__title {
+ @include fontSize14;
+  margin-bottom: 5px;
+}
+
+.date__wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+  }
+}

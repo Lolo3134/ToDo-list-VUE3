@@ -1,0 +1,44 @@
+.successes__counts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #29A19C;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .num {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      color: #29A19C;
+    }
+
+    p {
+      @include fontSize12Bold;
+    }
+  }
+}
+
+.count__title {
+  @include fontSize12Bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+

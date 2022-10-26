@@ -1,5 +1,27 @@
-.main__header {
-  width: calc(100% - 231px);
-  margin-right: 0;
+.mainHeader {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.mainHeader__newTask {
+  color: #FAFAFA;
+  background: #29A19C;
+}
+
+.mainHeader__user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @include fontSize16;
+
+  button {
+    width: 24px;
+    height: 24px;
+    background: #FAFAFA;
+    box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
 }
