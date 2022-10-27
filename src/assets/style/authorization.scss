@@ -38,12 +38,6 @@
   }
 }
 
-.authorization__btn {
-  @include fontSize16;
-  color: #FAFAFA;
-  background: #29A19C;
-}
-
 .authorization__registration {
   @include fontSize12Line16;
   color: black;

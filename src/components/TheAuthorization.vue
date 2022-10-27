@@ -8,7 +8,7 @@
       <div class="authorization__pass">
         <input type="password" placeholder="Пароль">
       </div>
-      <button class="btn authorization__btn">Войти</button>
+      <button class="btn--primary">Войти</button>
       <p class="authorization__registration">Еще нет аккаунта? <a href="#">Регистрация</a></p>
       <div class="authorization__hr">
         <hr>

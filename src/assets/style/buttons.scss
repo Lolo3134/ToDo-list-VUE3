@@ -1,8 +1,21 @@
-.btn {
+.btn--primary {
   border-radius: 8px;
   padding: 10px 25px;
   border: none;
   cursor: pointer;
+  color: #FAFAFA;
+  @include fontSize16;
+  background: #29A19C;
+}
+
+.btn--danger {
+  border-radius: 8px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  color: #FAFAFA;
+  @include fontSize16;
+  background: #F05454;
 }
 
 .btn__icon {
@@ -14,4 +27,5 @@
   display: flex;
   align-items: center;
   @include fontSize16;
+  color: #FAFAFA;
 }
