@@ -8,14 +8,14 @@
         <p class="date__title">На часах у нас</p>
         <div class="date__wrapper">
           <img src="../assets/icon/clock.png" width="24" height="24" alt="clock">
-          <p>12:30:43</p>
+          <p>{{ localeTime }}</p>
         </div>
       </div>
       <div>
         <p class="date__title">А сегодня у нас</p>
         <div  class="date__wrapper">
           <img src="../assets/icon/calendar.png" width="24" height="24" alt="calendar">
-          <p>5 апреля 2021</p>
+          <p>{{ localeDate }}</p>
         </div>
       </div>
     </div>
@@ -23,8 +23,23 @@
 </template>
 
 <script>
-// export default {
-//   name: "Date"
-// }
+export default {
+  data: () => ({
+    date: new Date,
+  }),
+  computed: {
+    localeDate() {
+      return (new Date).toLocaleDateString('ru', {
+        year: 'numeric', month: 'long', day: 'numeric', weekday: 'long'
+      })
+    },
+    localeTime() {
+      return (new Date).toLocaleTimeString()
+    },
+  },
+  created() {
+    this.intervalId = setInterval(() => this.date = Date.now(), 1000); // Обновляем значения не чаще раза в секунду. А то и реже.
+  },
+}
 </script>
 

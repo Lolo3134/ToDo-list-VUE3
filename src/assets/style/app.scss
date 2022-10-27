@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 @import "mixins";
 @import "variables";
 @import "header";
@@ -13,6 +13,7 @@
 @import "notice";
 @import "fact";
 @import "taskTracker";
+@import "modal";
 
 * {
   margin: 0;
@@ -85,8 +86,7 @@ body {
 .block {
   background: #FFFFFF;
   box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);
-  border-radius: 10px;
-  width: 100%;
+  border-radius: 10px;;
   padding: 20px;
 }
 
